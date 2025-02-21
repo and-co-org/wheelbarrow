@@ -3,6 +3,8 @@ import numpy as np
 import time
 from dotenv import load_dotenv
 import os
+from pathlib import Path
+
 """
 this is huxley's file for wheelbarrow
 which contains my personal utils!
@@ -17,7 +19,10 @@ def alert(message, at=True):
     webhook_url = "https://discord.com/api/webhooks/1342398467976200233/wc_l8MCnZWmNL0xj6calNsI1KulQ8uQsybi-_4_f2frJnj1qv27tfFH9BbD1qvOaT4hZ"
 
     if at:
-        load_dotenv()
+        cur = Path(__file__).parent
+        env_path = cur / "../../../../../.env"
+        load_dotenv(env_path)
+
         message = f"<@{os.getenv('HUXLEY_DISCORD_USER_ID')}> {message}"
 
     requests.post(
@@ -40,3 +45,4 @@ def timeit(precision=3):
             return result
         return wrapper
     return decorator
+
