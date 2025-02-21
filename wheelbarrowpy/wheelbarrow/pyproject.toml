@@ -1,0 +1,18 @@
+[project]
+name = "wheelbarrow"
+version = "0.1.0"
+description = "our python wheelbarrow. tools for making stuff happen"
+readme = "README.md"
+authors = [
+    { name = "Huxley Marvit", email = "huxley@princeton.edu" },
+    { name = "Houjun Liu", email = "houjun@jemoka.com" },
+    { name = "Albert Yan Huang", email = "mail@exr0n.com" },
+    { name = "David Freifeld", email = "howdy@quantumi.sh" },
+    { name = "Zachary Sayyah", email = "idk@lmao.org" },
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
