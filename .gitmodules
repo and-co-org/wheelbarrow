@@ -1,0 +1,3 @@
+[submodule "people/jack/adventuretime"]
+	path = people/jack/adventuretime
+	url = git@github.com:Jemoka/adventuretime.git
