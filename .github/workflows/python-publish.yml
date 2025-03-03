@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-dists
-          path: dist/
+          path: wheelbarrowpy/wheelbarrow/dist/
 
   pypi-publish:
     runs-on: ubuntu-latest
