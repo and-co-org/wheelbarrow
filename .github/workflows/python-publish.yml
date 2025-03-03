@@ -18,6 +18,9 @@ permissions:
 jobs:
   release-build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./wheelbarrowpy/wheelbarrow  # from https://stackoverflow.com/a/63122434
 
     steps:
       - uses: actions/checkout@v4
