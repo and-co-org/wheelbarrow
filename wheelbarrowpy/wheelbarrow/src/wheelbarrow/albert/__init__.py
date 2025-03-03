@@ -25,3 +25,12 @@ def pickle_memoize(fname, creation_callback, verbose=False):
             from sys import stderr
             if verbose: print("    couldn't pickle the object! :(", err, file=stderr)
         return got
+
+def style_matplotlib(plt):
+    plt.rcParams.update({
+        'figure.dpi': 200,
+        'savefig.dpi': 200,
+        'font.family': 'serif',
+        'font.weight': 'bold',
+        'axes.labelweight': 'bold',
+    })
