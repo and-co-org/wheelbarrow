@@ -8,9 +8,9 @@
 
 name: Upload Python Package
 
-on:
+on: 
   push:
-    branches: ["prod"]
+    branches: ["main"]
 
 permissions:
   contents: read
