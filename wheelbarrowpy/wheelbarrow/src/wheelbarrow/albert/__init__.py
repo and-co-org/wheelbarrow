@@ -31,6 +31,9 @@ def style_matplotlib(plt):
         'figure.dpi': 200,
         'savefig.dpi': 200,
         'font.family': 'serif',
+        'axis.titlesize': 18,
+        'axis.titleweight': 'bold',
+        'font.size': 18,
         'font.weight': 'bold',
         'axes.labelweight': 'bold',
     })
