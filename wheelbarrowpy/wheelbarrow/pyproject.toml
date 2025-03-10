@@ -1,6 +1,6 @@
 [project]
 name = "andco-wheelbarrow"
-version = "0.1.5"
+version = "0.2.1"
 description = "our python wheelbarrow. tools for making stuff happen"
 readme = "README.md"
 authors = [

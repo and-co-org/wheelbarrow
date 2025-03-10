@@ -77,8 +77,8 @@ class ErroredValue(object):
         return f'<ErroredValue {self.value}±{self.delta} at {hex(id(self))}>'
 
     @property
-    def percentDelta(self):
-        return self.delta/self.value
+    def percent_delta(self):
+        return self.delta/self.value * 100 
 
     @staticmethod
     def ln(a):
