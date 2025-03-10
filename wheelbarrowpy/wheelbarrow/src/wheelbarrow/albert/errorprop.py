@@ -80,7 +80,14 @@ class ErroredValue(object):
     def percent_delta(self):
         return self.delta/self.value * 100 
 
+    @property
+    def delta_rel(self):
+        return self.delta / self.value
+
     @staticmethod
     def ln(a):
         return ErroredValue(math.log(a.value, math.e), ((a.delta)/a.value))
+    
+    def sqrt(self):
+        return self ** 0.5
 
