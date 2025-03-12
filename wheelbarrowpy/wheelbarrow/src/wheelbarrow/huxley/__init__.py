@@ -30,6 +30,7 @@ def alert(message, at=True):
             json={"content": message}
         )
 
+p = print
 
 ####################
 #    DECORATORS    #
