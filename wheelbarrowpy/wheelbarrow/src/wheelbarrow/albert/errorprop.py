@@ -76,13 +76,14 @@ class ErroredValue(object):
     def __repr__(self):
         return f'<ErroredValue {self.value}±{self.delta} at {hex(id(self))}>'
 
+    @DeprecationWarning
     @property
     def percent_delta(self):
         return self.delta/self.value * 100 
 
     @property
     def delta_rel(self):
-        return self.delta / self.value
+        return abs(self.delta / self.value)
 
     @staticmethod
     def ln(a):
