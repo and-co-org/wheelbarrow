@@ -188,4 +188,4 @@ def increment_version(key):
         for k, v in sorted(versions.items()):
             f.write(f"{k} {v}\n")
 
-    return f"{key}_v{new_version}"
+    return f"{key}.{new_version}" if len(key) > 0 and key[-1].isdigit() else f"{key}_v{new_version}"
